@@ -1,11 +1,16 @@
 import React from 'react';
-import Greeting from './components/Greeting.js';
 import './App.css';
 
 const App = (props) => (
   <div>
-    <h1>HII I'm an arrow function</h1>
-    {props.name.map((name, key) =>  <Greeting key={key} name={name} />)}
+    <h1>ToDo</h1>
+    <input type="text" placeholder="Add new todo item..." />
+    <ul>
+      <li>Check in round</li>
+      <li>Go through homework</li>
+      <li>Talk about Flux & Redux</li>
+      <li>See how it fits React</li>
+    </ul>
   </div>
 )
 
