@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import AddTodo from './components/AddTodo';
+import AddTodoWrapped from './containers/AddTodo';
 import ListTodos from './containers/ListTodos';
 
 const App = (props) => (
   <div className="Todo-container">
     <h1 className="Todo-title">todos</h1>
     <div className="Todo-box">
-      <AddTodo value="this" />
-      <ListTodos />
+      <AddTodoWrapped />
+      <ListTodos filter="checked" />
     </div>
   </div>
-)
+);
 
 export default App;
