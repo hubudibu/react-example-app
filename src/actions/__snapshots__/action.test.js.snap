@@ -1,0 +1,7 @@
+exports[`Actions match snapshot 1`] = `
+Object {
+  "id": 10,
+  "text": "Sample text",
+  "type": "ADD_TODO",
+}
+`;
