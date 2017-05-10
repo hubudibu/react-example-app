@@ -1,0 +1,9 @@
+exports[`test TodoInput renders as in snapshot 1`] = `
+<input
+  className="TodoInput"
+  onChange={[Function]}
+  onKeyPress={[Function]}
+  placeholder="Add new todo item..."
+  type="text"
+  value="" />
+`;
