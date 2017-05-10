@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import AddTodo from './components/AddTodo';
+import AddTodo from './containers/AddTodo';
 import ListTodos from './containers/ListTodos';
 
 const App = (props) => (

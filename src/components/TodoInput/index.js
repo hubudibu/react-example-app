@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-class AddTodo extends React.Component {
+class TodoInput extends React.Component {
 
   constructor(props) {
     super(props);
@@ -27,7 +27,7 @@ class AddTodo extends React.Component {
 
   render() {
     return <input
-              className="AddTodo"
+              className="TodoInput"
               type="text"
               placeholder="Add new todo item..."
               value={this.state.value}
@@ -37,4 +37,4 @@ class AddTodo extends React.Component {
   }
 }
 
-export default AddTodo;
+export default TodoInput;
