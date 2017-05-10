@@ -16,3 +16,10 @@ it('TodoInput value changes state', () => {
   input.simulate('change', {target: {value: todoText}});
   expect(input.state()).toEqual({value: todoText});
 });
+
+it('TodoInput input changes value', () => {
+  const todoText = 'Sample todo';
+  const input = mount(<TodoInput onSubmit={()=>{}} />);
+  input.simulate('change', {target: {value: todoText}});
+  expect(input.find('input').get(0).value).toEqual(todoText);
+});
