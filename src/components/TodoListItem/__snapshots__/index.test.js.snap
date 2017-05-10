@@ -1,0 +1,11 @@
+exports[`Todo List Item renders empty item as in snapshot 1`] = `
+<li
+  className="TodoListItem" />
+`;
+
+exports[`Todo List Item renders todo item as in snapshot 1`] = `
+<li
+  className="TodoListItem">
+  Sample todo
+</li>
+`;
