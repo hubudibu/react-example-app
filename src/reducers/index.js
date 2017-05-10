@@ -1,11 +1,32 @@
-const initialState = [
+const initialTodos = [
   {
-    text: "Sleep at least 7 hours",
-    checked: false
+    id: 0,
+    text: 'Check in round',
+    done: false,
+  },
+  {
+    id: 1,
+    text: 'Go through redux example',
+    done: false,
+  },
+  {
+    id: 2,
+    text: 'Talk about testing with Jest',
+    done: false,
+  },
+  {
+    id: 3,
+    text: '???',
+    done: false,
+  },
+  {
+    id: 4,
+    text: 'Profit',
+    done: false,
   }
-];
+]
 
-const todos = (state = initialState, action) => {
+const todos = (state = initialTodos, action) => {
   switch (action.type) {
     default:
       return state
