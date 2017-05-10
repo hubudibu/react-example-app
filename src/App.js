@@ -7,7 +7,7 @@ const App = (props) => (
   <div className="Todo-container">
     <h1 className="Todo-title">todos</h1>
     <div className="Todo-box">
-      <AddTodo value="this" />
+      <AddTodo value="this" onSubmit={() => {}} />
       <ListTodos />
     </div>
   </div>
