@@ -23,3 +23,13 @@ it('TodoInput input changes value', () => {
   input.simulate('change', {target: {value: todoText}});
   expect(input.find('input').get(0).value).toEqual(todoText);
 });
+
+it('TodoInput input changes value', () => {
+  const todoText = 'Sample todo';
+  const spy = jest.fn();
+  const input = mount(<TodoInput onSubmit={spy} />);
+  input.simulate('change', {target: {value: todoText}});
+  input.simulate('keypress', {charCode: 13});
+
+  expect(spy).toHaveBeenCalledWith(todoText);
+});
