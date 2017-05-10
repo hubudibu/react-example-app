@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import { addTodo } from '../../actions';
 import TodoInput from '../../components/TodoInput';
 
-const mapStateToProps = (state, ownProps) => {
+export const mapStateToProps = (state, ownProps) => {
   return {};
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+export const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onSubmit: (text) => {
       dispatch(addTodo(text))

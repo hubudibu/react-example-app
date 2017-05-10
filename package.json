@@ -8,8 +8,10 @@
     "react-redux": "^5.0.4"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "enzyme": "^2.8.2",
     "react-scripts": "0.9.5",
-    "@kadira/storybook": "^2.21.0"
+    "react-test-renderer": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,18 @@
+exports[`Todo List Item renders empty list as in snapshot 1`] = `
+<ul
+  className="TodoList" />
+`;
+
+exports[`Todo List Item renders todo item as in snapshot 1`] = `
+<ul
+  className="TodoList">
+  <li
+    className="TodoListItem">
+    Sample todo 1
+  </li>
+  <li
+    className="TodoListItem">
+    Sample todo 2
+  </li>
+</ul>
+`;

@@ -1,4 +1,4 @@
-const initialTodos = [
+export const initialTodos = [
   {
     id: 0,
     text: 'Check in round',
@@ -26,7 +26,7 @@ const initialTodos = [
   }
 ]
 
-const todos = (state = initialTodos, action) => {
+const todos = (state = initialTodos, action = {}) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [

@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import TodoList from '../../components/TodoList';
 
-const mapStateToProps = (state, ownProps) => {
+export const mapStateToProps = (state, ownProps) => {
   return {
     todos: state
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+export const mapDispatchToProps = (dispatch, ownProps) => {
   return {};
 };
 
