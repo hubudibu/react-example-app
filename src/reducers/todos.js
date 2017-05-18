@@ -6,21 +6,26 @@ export const initialTodos = [
   },
   {
     id: 1,
-    text: 'Go through redux example',
+    text: 'Go through async example',
     done: false,
   },
   {
     id: 2,
-    text: 'Talk about testing with Jest',
+    text: 'Initialize Firebase',
     done: false,
   },
   {
     id: 3,
-    text: '???',
+    text: 'Test it',
     done: false,
   },
   {
     id: 4,
+    text: '???',
+    done: false,
+  },
+  {
+    id: 5,
     text: 'Profit',
     done: false,
   }
