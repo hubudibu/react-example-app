@@ -1,8 +1,8 @@
 const loading = (state = false, action = {}) => {
   switch (action.type) {
-    case 'ASYNC_STARTED':
+    case 'TODOS_LOADING':
       return true;
-    case 'ASYNC_LOADED':
+    case 'TODOS_LOADED':
       return false;
     default:
       return state;

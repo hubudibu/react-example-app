@@ -1,4 +1,7 @@
+import database from '../database';
+
 let nextTodoId = 10;
+
 
 export const addTodo = (text) => {
   return {
@@ -8,25 +11,24 @@ export const addTodo = (text) => {
   };
 };
 
-const asyncStarted = () => {
+const todosLoading = () => {
   return {
-    type: 'ASYNC_STARTED'
+    type: 'TODOS_LOADING'
   }
 }
 
-const asyncLoaded = () => {
+const todosLoaded = (todos) => {
   return {
-    type: 'ASYNC_LOADED'
+    type: 'TODOS_LOADED',
+    todos
   }
 }
 
-export const asyncAction = () => {
+export const loadTodos = () => {
   return dispatch => {
-
-    dispatch(asyncStarted());
-
-    setTimeout(()=>{
-      dispatch(asyncLoaded());
-    },1000);
+    dispatch(todosLoading());
+    database.ref('/').once('value', snap => {
+      dispatch(todosLoaded(snap.val()));
+    });
   }
 }
