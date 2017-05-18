@@ -42,7 +42,7 @@ const todos = (state = initialTodos, action = {}) => {
           done: false
         }
       ];
-    case 'ADD_TODOS':
+    case 'TODOS_LOADED':
       return action.todos;
     default:
       return state;
