@@ -42,6 +42,8 @@ const todos = (state = initialTodos, action = {}) => {
           done: false
         }
       ];
+    case 'ADD_TODOS':
+      return action.todos;
     default:
       return state;
   }
