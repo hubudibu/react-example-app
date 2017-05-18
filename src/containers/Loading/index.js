@@ -1,9 +1,11 @@
+import React from 'react';
 import { connect } from 'react-redux';
-import TodoList from '../../components/TodoList';
+
+export const Loading = ({ loading }) => (<p>{loading ? <span>loading</span> : ''}</p>);
 
 export const mapStateToProps = (state, ownProps) => {
   return {
-    todos: state.todos
+    loading: state.loading
   };
 };
 
@@ -11,9 +13,7 @@ export const mapDispatchToProps = (dispatch, ownProps) => {
   return {};
 };
 
-const ListTodos = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(TodoList);
-
-export default ListTodos;
+)(Loading);

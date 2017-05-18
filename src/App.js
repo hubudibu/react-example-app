@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AddTodo from './containers/AddTodo';
 import ListTodos from './containers/ListTodos';
+import Loading from './containers/Loading';
 
 const App = (props) => (
   <div className="Todo-container">
@@ -10,6 +11,7 @@ const App = (props) => (
       <AddTodo value="this" onSubmit={() => {}} />
       <ListTodos />
     </div>
+    <Loading />
   </div>
 )
 
